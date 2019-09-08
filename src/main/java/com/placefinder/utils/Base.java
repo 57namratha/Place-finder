@@ -6,12 +6,21 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Base {
-    public static long wait=60;
+    private final long TIMEOUT =5;
     public static AppiumDriver driver;
 
-    public static void waitUntilElementIsVisible(WebElement element){
-        WebDriverWait wwait = new WebDriverWait(driver, wait);
-        wwait.until(ExpectedConditions.visibilityOf(element));
+    protected void waitUntilElementIsVisible(WebElement element){
+        try {
+            WebDriverWait driverWait = new WebDriverWait(driver, TIMEOUT);
+            driverWait.until(ExpectedConditions.visibilityOf(element));
+        } catch (Exception e) {
+            System.out.println("Exception: No such element "+ e.getMessage());
+        }
+
     }
 
+    public AppiumDriver getDriver() {
+        return driver;
+    }
 }
+

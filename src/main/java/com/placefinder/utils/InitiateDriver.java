@@ -2,6 +2,7 @@ package com.placefinder.utils;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;
 import java.util.HashMap;
@@ -16,9 +17,13 @@ public class InitiateDriver {
         {
             getProperties = PropertyReader.getPropValues("config.properties");
             String runOn = getProperties.get("runOn");
-            driver = new AndroidDriver(new URL(getProperties.get("appiumURL")), getCapabilities(runOn));
-            driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
+            if(runOn.equalsIgnoreCase("ANDROID")) {
+                driver = new AndroidDriver(new URL(getProperties.get("appiumURL")), getCapabilities(runOn));
+                driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+            } else if(runOn.equalsIgnoreCase("IOS")) {
+                driver = new IOSDriver(new URL(getProperties.get("appiumURL")), getCapabilities(runOn));
+                driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+            }
         }
         catch (Exception e)
         {
@@ -41,7 +46,6 @@ public class InitiateDriver {
 
         try
         {
-
             if (runOn.equalsIgnoreCase("ANDROID"))
             {
                 capabilities=new DesiredCapabilities();
@@ -51,6 +55,8 @@ public class InitiateDriver {
                 capabilities.setCapability("app", getProperties.get("app"));
                 capabilities.setCapability("appPackage", getProperties.get("appPackage"));
                 capabilities.setCapability("appActivity", getProperties.get("appActivity"));
+                capabilities.setCapability("automationName", getProperties.get("androidAutomationName"));
+
             }
             else if (runOn.equalsIgnoreCase("IOS"))
             {

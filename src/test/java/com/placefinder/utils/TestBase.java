@@ -14,7 +14,7 @@ public class TestBase {
     {
         InitiateDriver initiateDriver = new InitiateDriver();
         driver = initiateDriver.getAppiumDriver();
-        driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Base.driver=driver;
     }
 
@@ -23,4 +23,5 @@ public class TestBase {
     {
         driver.quit();
     }
+
 }

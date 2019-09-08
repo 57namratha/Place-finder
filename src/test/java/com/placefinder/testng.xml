@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name = "Place - Finder Test Suites">
-    <test name="">
+    <listeners>
+        <listener class-name="com.placefinder.utils.TestListener"></listener>
+    </listeners>
 
+    <test name="Home Screen Tests">
         <classes>
-            <class name=""/>
+            <class name="com.placefinder.homepageTest.HomePageTest"/>
         </classes>
     </test>
 
