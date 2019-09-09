@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Place - Finder Test Suites" duration-ms="1479" started-at="2019-09-09T10:28:09Z" finished-at="2019-09-09T10:28:11Z">
+    <groups>
+      <group name="UI">
+        <method signature="PlaceFinderPageTest.isPlaceFinderScreenDisplayed()[pri:0, instance:com.placefinder.placefinderTest.PlaceFinderPageTest@3d8c7aca]" name="isPlaceFinderScreenDisplayed" class="com.placefinder.placefinderTest.PlaceFinderPageTest"/>
+        <method signature="PlaceFinderPageTest.isSearchButtonDisplayed()[pri:0, instance:com.placefinder.placefinderTest.PlaceFinderPageTest@3d8c7aca]" name="isSearchButtonDisplayed" class="com.placefinder.placefinderTest.PlaceFinderPageTest"/>
+        <method signature="PlaceFinderPageTest.isSearchFieldDisplayed()[pri:0, instance:com.placefinder.placefinderTest.PlaceFinderPageTest@3d8c7aca]" name="isSearchFieldDisplayed" class="com.placefinder.placefinderTest.PlaceFinderPageTest"/>
+      </group> <!-- UI -->
+    </groups>
+    <test name="Place finder - UI test cases" duration-ms="1479" started-at="2019-09-09T10:28:09Z" finished-at="2019-09-09T10:28:11Z">
+      <class name="com.placefinder.placefinderTest.PlaceFinderPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.placefinder.placefinderTest.PlaceFinderPageTest@3d8c7aca]" name="setup" is-config="true" duration-ms="14759" started-at="2019-09-09T15:57:54Z" finished-at="2019-09-09T15:58:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="isPlaceFinderScreenDisplayed()[pri:0, instance:com.placefinder.placefinderTest.PlaceFinderPageTest@3d8c7aca]" name="isPlaceFinderScreenDisplayed" duration-ms="734" started-at="2019-09-09T15:58:09Z" finished-at="2019-09-09T15:58:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isPlaceFinderScreenDisplayed -->
+        <test-method status="PASS" signature="isSearchFieldDisplayed()[pri:0, instance:com.placefinder.placefinderTest.PlaceFinderPageTest@3d8c7aca]" name="isSearchFieldDisplayed" duration-ms="203" started-at="2019-09-09T15:58:10Z" finished-at="2019-09-09T15:58:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSearchFieldDisplayed -->
+        <test-method status="PASS" signature="isSearchButtonDisplayed()[pri:0, instance:com.placefinder.placefinderTest.PlaceFinderPageTest@3d8c7aca]" name="isSearchButtonDisplayed" duration-ms="414" started-at="2019-09-09T15:58:10Z" finished-at="2019-09-09T15:58:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSearchButtonDisplayed -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.placefinder.placefinderTest.PlaceFinderPageTest@3d8c7aca]" name="teardown" is-config="true" duration-ms="594" started-at="2019-09-09T15:58:11Z" finished-at="2019-09-09T15:58:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.placefinder.placefinderTest.PlaceFinderPageTest -->
+    </test> <!-- Place finder - UI test cases -->
+  </suite> <!-- Place - Finder Test Suites -->
+</testng-results>

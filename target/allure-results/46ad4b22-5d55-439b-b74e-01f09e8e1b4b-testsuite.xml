@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1568024342201" stop="1568024343765" version="1.4.23" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Place - Finder Test Suites : Place finder - UI test cases</name>
+    <title>Place - Finder Test Suites : Place finder - UI test cases</title>
+    <test-cases>
+        <test-case start="1568024342250" stop="1568024342986" status="passed">
+            <name>isPlaceFinderScreenDisplayed</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="DESKTOP-I7KTSAJ"/>
+                <label name="thread" value="4884@DESKTOP-I7KTSAJ.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1568024343092" stop="1568024343311" status="passed">
+            <name>isSearchFieldDisplayed</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="DESKTOP-I7KTSAJ"/>
+                <label name="thread" value="4884@DESKTOP-I7KTSAJ.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1568024343317" stop="1568024343759" status="passed">
+            <name>isSearchButtonDisplayed</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="DESKTOP-I7KTSAJ"/>
+                <label name="thread" value="4884@DESKTOP-I7KTSAJ.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
