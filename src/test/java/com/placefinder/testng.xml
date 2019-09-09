@@ -2,12 +2,28 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name = "Place - Finder Test Suites">
     <listeners>
-        <listener class-name="com.placefinder.utils.TestListener"></listener>
+        <listener class-name="com.placefinder.utils.TestListener"/>
     </listeners>
 
-    <test name="Home Screen Tests">
+    <test name="Place finder - UI test cases">
+        <groups>
+            <run>
+                <include name="UI"/>
+            </run>
+        </groups>
         <classes>
-            <class name="com.placefinder.homepageTest.HomePageTest"/>
+            <class name="com.placefinder.placefinderTest.PlaceFinderPageTest"/>
+        </classes>
+    </test>
+
+    <test name="Place finder - functional test case">
+        <groups>
+            <run>
+                <include name="Functional"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.placefinder.placefinderTest.PlaceFinderPageTest"/>
         </classes>
     </test>
 

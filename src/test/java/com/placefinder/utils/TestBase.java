@@ -1,7 +1,9 @@
 package com.placefinder.utils;
 
 import io.appium.java_client.AppiumDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -9,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class TestBase {
     protected AppiumDriver driver;
 
-    @BeforeTest(alwaysRun=true)
+    @BeforeSuite(alwaysRun=true)
     public void setup()
     {
         InitiateDriver initiateDriver = new InitiateDriver();
@@ -18,7 +20,7 @@ public class TestBase {
         Base.driver=driver;
     }
 
-    @AfterTest(alwaysRun = true)
+    @AfterSuite(alwaysRun = true)
     public void teardown()
     {
         driver.quit();

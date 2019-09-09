@@ -1,12 +1,12 @@
-package com.placefinder.homepage;
+package com.placefinder.placefinder;
 
 import com.placefinder.utils.ObjectRepository;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-public class HomePageObjectRepository extends ObjectRepository {
-    public HomePageObjectRepository(AppiumDriver driver) {
+public class PlaceFinderPageObjectRepository extends ObjectRepository {
+    public PlaceFinderPageObjectRepository(AppiumDriver driver) {
         super(driver);
     }
 

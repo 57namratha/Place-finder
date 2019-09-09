@@ -1,6 +1,6 @@
 package com.placefinder;
 
-import com.placefinder.homepage.HomePage;
+import com.placefinder.placefinder.PlaceFinderPage;
 import com.placefinder.searchresult.SearchResultPage;
 import com.placefinder.utils.Base;
 
@@ -18,6 +18,6 @@ public class Pages {
         return page;
     }
 
-    public static HomePage HomePage() {return getPage(HomePage.class);}
+    public static PlaceFinderPage HomePage() {return getPage(PlaceFinderPage.class);}
     public static SearchResultPage SearchResultPage() {return getPage(SearchResultPage.class);}
 }

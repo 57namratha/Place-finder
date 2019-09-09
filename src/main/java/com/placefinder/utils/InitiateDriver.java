@@ -56,6 +56,7 @@ public class InitiateDriver {
                 capabilities.setCapability("appPackage", getProperties.get("appPackage"));
                 capabilities.setCapability("appActivity", getProperties.get("appActivity"));
                 capabilities.setCapability("automationName", getProperties.get("androidAutomationName"));
+                capabilities.setCapability("autoGrantPermissions", true);
 
             }
             else if (runOn.equalsIgnoreCase("IOS"))
@@ -68,6 +69,7 @@ public class InitiateDriver {
                 capabilities.setCapability("app", getProperties.get("app"));
                 capabilities.setCapability("appPackage", getProperties.get("appPackage"));
                 capabilities.setCapability("appActivity", getProperties.get("appActivity"));
+                capabilities.setCapability("autoGrantPermissions", true);
             }
         }
         catch (Exception e)
