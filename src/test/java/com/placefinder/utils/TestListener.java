@@ -18,12 +18,14 @@ public class TestListener extends Base implements ITestListener {
 
     }
 
+    //Take screenshot on test method failure
     public void onTestFailure(ITestResult result){
         String methodName = result.getName();
         screenShot(methodName,driver);
     }
 
 
+    //Take screenshot
     public void screenShot(String methodName, AppiumDriver driver){
         String filePath = "./src/test/resources/";
         File src = driver.getScreenshotAs(OutputType.FILE);

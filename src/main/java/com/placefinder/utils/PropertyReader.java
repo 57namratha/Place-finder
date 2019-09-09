@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Properties;
 import java.util.Set;
+//Read and returns the property file value as key and value pair
 
 public class PropertyReader {
     public static HashMap<String,String> getPropValues(String file) {

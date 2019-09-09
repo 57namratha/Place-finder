@@ -4,6 +4,7 @@ import com.placefinder.placefinder.PlaceFinderPage;
 import com.placefinder.searchresult.SearchResultPage;
 import com.placefinder.utils.Base;
 
+//Returns the reference to all the page classes
 public class Pages {
     private static <T extends Base> T getPage(Class<T> pageType)  {
         T page;

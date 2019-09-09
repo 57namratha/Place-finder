@@ -23,8 +23,8 @@ public class PlaceFinderPageTest extends TestBase {
     }
 
     @Test(priority = 4, groups={"Functional"})
-    public void isNavigatedToSearchScreen() {
-        Assert.assertTrue(Pages.HomePage().search(), "Failed to navigate to search page");
+    public void isNavigatedToSearchScreenOnSearch() {
+        Assert.assertTrue(Pages.HomePage().search(), "Failed to navigate to search result page");
     }
 
 }

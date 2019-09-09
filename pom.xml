@@ -12,9 +12,6 @@
         <allure.version>1.4.23</allure.version>
         <aspectj.version>1.8.5</aspectj.version>
         <suiteXmlFile>src/test/java/com/placefinder/testng.xml</suiteXmlFile>
-        <!--<sfdcJarPath>/test_sandbox_wsdl.jar</sfdcJarPath>-->
-        <!--<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
-        <!--<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>-->
     </properties>
 
     <dependencies>
